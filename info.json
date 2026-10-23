@@ -2,7 +2,7 @@
     "name": "SilenceBots",
     "version": "1.0.1",
     "title": "Silence Bots",
-    "author": "Glaydr",
+    "author": "Allari / Glaydr",
     "factorio_version": "2.1",
     "dependencies": ["base >= 2.1"],
     "description": "Mutes the ambient buzzing sounds of construction and logistic robots"
