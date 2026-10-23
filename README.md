@@ -25,5 +25,5 @@ The mod replaces `working_sound` on the `construction-robot` and `logistic-robot
 
 ## Credits
 
-- **Author:** Glaydr
+- **Authors:** Allari / Glaydr
 - **Inspired by:** [NoSpidertronNoises](https://mods.factorio.com/mod/NoSpidertronNoises) by JigSaW_3
