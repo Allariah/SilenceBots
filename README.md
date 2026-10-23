@@ -1,6 +1,6 @@
 # Silence Bots
 
-A Factorio 2.0 mod that mutes the ambient buzzing sounds of construction and logistic robots, while preserving their activate and deactivate sounds.
+A Factorio 2.1 mod that mutes the ambient buzzing sounds of construction and logistic robots, while preserving their activate and deactivate sounds.
 
 ## Installation
 
@@ -16,12 +16,12 @@ Download the latest release and place the zip file (or extracted folder) in your
 
 ## Compatibility
 
-- Requires **Factorio 2.0** or later
-- Uses `data-final-fixes.lua` to apply overrides last in the prototype loading pipeline, maximizing compatibility with other mods
+- Requires **Factorio 2.1**. For Factorio 2.0, use version 1.0.0.
+- Applies its overrides in `data.lua`. Mods that change robot working sounds in `data-updates.lua` or `data-final-fixes.lua` can override them.
 
 ## How It Works
 
-The mod sets the volume of the five `flying-robot-*.ogg` sounds to `0.0` on both the `construction-robot` and `logistic-robot` prototypes. Only the `working_sound.sound` property is overwritten — `activate_sound`, `deactivate_sound`, and all other prototype properties are left untouched.
+The mod replaces `working_sound` on the `construction-robot` and `logistic-robot` prototypes with the five `flying-robot-*.ogg` sounds at volume `0.0`. Any existing `activate_sound` and `deactivate_sound` are kept. All other prototype properties are left untouched.
 
 ## Credits
 
